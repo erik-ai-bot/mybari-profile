@@ -11,9 +11,9 @@
   <span class="ds-na"  title="No source — industry knowledge estimate only">?</span>
 </div><main class="max-w-7xl mx-auto px-4 py-6">
 <div style="display:flex;gap:1px;border-bottom:1px solid #2a3a50;margin-bottom:16px">
-  <button onclick="showTab('basic')" id="btn-basic" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid #2a3a50;border-bottom:1px solid #1a2332;background:#1a2332;color:#ffffff;cursor:pointer;transition:all 0.15s">Entity Profile</button>
-  <button onclick="showTab('scorecard')" id="btn-scorecard" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid transparent;border-bottom:1px solid #2a3a50;background:transparent;color:#8899b4;cursor:pointer;transition:all 0.15s">Risk &amp; Intelligence</button>
-  <button onclick="showTab('air8')" id="btn-air8" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid transparent;border-bottom:1px solid #2a3a50;background:transparent;color:#8899b4;cursor:pointer;transition:all 0.15s">Air8 Credit Profile</button>
+  <button onclick="showTab('basic')" id="btn-basic" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid #2a3a50;border-bottom:1px solid #1a2332;background:#1a2332;color:#fff;cursor:pointer">Entity Profile</button>
+  <button onclick="showTab('scorecard')" id="btn-scorecard" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid transparent;border-bottom:1px solid #2a3a50;background:transparent;color:#8899b4;cursor:pointer">Risk &amp; Intelligence</button>
+  <button onclick="showTab('air8')" id="btn-air8" style="padding:8px 16px;font-size:11px;font-weight:600;border-radius:6px 6px 0 0;border:1px solid transparent;border-bottom:1px solid #2a3a50;background:transparent;color:#8899b4;cursor:pointer">Air8 Credit Profile</button>
 </div>
 <div id="tab-scorecard" style="display:none">
 <section><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Risk Profile</div><div class="grid grid-cols-1 lg:grid-cols-3 gap-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]" style="align-self:stretch;display:flex;flex-direction:column;justify-content:center;"><div id="ga-radar-chart" style="width:100%;height:280px;"></div></div><div class="lg:col-span-2" style="display:flex;flex-direction:column;"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]" style="flex:1;"><div class="flex gap-2 mb-4"><button class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40">Score Detail</button><button class="text-xs px-3 py-1 rounded-full text-[#c8d6e8] hover:text-white">Score Trend</button></div><div id="ga-score-trend" style="display:none;height:200px;width:100%;margin-top:12px"></div><div class="space-y-0"><div class="border-b border-[#2a3a50]"><button class="w-full flex items-center justify-between py-2.5 text-left"><div class="flex items-center gap-3"><span class="text-sm font-semibold text-white">Quality</span><span class="text-xs text-[#c8d6e8]">14.07/15</span><span class="ds-val" title="Validated — internal data">✅</span></div><div class="flex items-center gap-2"><div class="w-24 h-1.5 rounded-full overflow-hidden bg-[#2a3a50]"><div class="h-full bg-blue-500 rounded-full" style="width:94%"></div></div><span class="text-xs text-[#8899b4]">▲</span></div></button><table class="w-full text-xs mb-3" data-subtable><thead><tr class="text-[#8899b4]"><th class="text-left py-1 font-normal">Attribute</th><th class="text-left py-1 font-normal">Value</th><th class="text-right py-1 font-normal">Score</th><th class="text-right py-1 font-normal">Wt</th><th class="text-right py-1 font-normal">Wtd</th></tr></thead><tbody><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Product Risk</td><td class="py-1.5">1</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">12.5%</td><td class="py-1.5 text-right font-semibold text-white">1.88</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Order Volume</td><td class="py-1.5">42,899.98</td><td class="py-1.5 text-right">0.5</td><td class="py-1.5 text-right">12.5%</td><td class="py-1.5 text-right font-semibold text-white">0.94</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Defect Rate</td><td class="py-1.5">0.39%</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">25%</td><td class="py-1.5 text-right text-emerald-400 font-medium">3.75</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Final Insp. Pass Rate</td><td class="py-1.5">100.00%</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">45%</td><td class="py-1.5 text-right text-emerald-400 font-medium">6.75</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Re-inspection</td><td class="py-1.5">-</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">5%</td><td class="py-1.5 text-right font-semibold text-white">0.75</td></tr></tbody></table></div><div class="border-b border-[#2a3a50]"><button class="w-full flex items-center justify-between py-2.5 text-left"><div class="flex items-center gap-3"><span class="text-sm font-semibold text-white">Performance</span><span class="text-xs text-[#c8d6e8]">36.08/45</span><span class="ds-val" title="Validated — internal data">✅</span></div><div class="flex items-center gap-2"><div class="w-24 h-1.5 rounded-full overflow-hidden bg-[#2a3a50]"><div class="h-full bg-blue-500 rounded-full" style="width:77%"></div></div><span class="text-xs text-[#8899b4]">▼</span></div></button><table class="w-full text-xs mb-3" style="display:none" data-subtable><thead><tr class="text-[#8899b4]"><th class="text-left py-1 font-normal">Attribute</th><th class="text-left py-1 font-normal">Value</th><th class="text-right py-1 font-normal">Score</th><th class="text-right py-1 font-normal">Wt</th><th class="text-right py-1 font-normal">Wtd</th></tr></thead><tbody><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Shipment Delay Days</td><td class="py-1.5">4.22 days</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">50%</td><td class="py-1.5 text-right font-semibold text-white">15.08</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Claim</td><td class="py-1.5">-</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">15%</td><td class="py-1.5 text-right text-emerald-400 font-medium">6.75</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">No. of Yr Txn</td><td class="py-1.5">3 years</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right font-semibold text-white">3</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Active Past 2 Years</td><td class="py-1.5">Yes</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">25%</td><td class="py-1.5 text-right text-emerald-400 font-medium">11.25</td></tr></tbody></table></div><div class="border-b border-[#2a3a50]"><button class="w-full flex items-center justify-between py-2.5 text-left"><div class="flex items-center gap-3"><span class="text-sm font-semibold text-white">Buyer/Supplier</span><span class="text-xs text-[#c8d6e8]">28.04/40</span><span class="ds-val" title="Validated — internal data">✅</span></div><div class="flex items-center gap-2"><div class="w-24 h-1.5 rounded-full overflow-hidden bg-[#2a3a50]"><div class="h-full bg-blue-500 rounded-full" style="width:77%"></div></div><span class="text-xs text-[#8899b4]">▼</span></div></button><table class="w-full text-xs mb-3" style="display:none" data-subtable><thead><tr class="text-[#8899b4]"><th class="text-left py-1 font-normal">Attribute</th><th class="text-left py-1 font-normal">Value</th><th class="text-right py-1 font-normal">Score</th><th class="text-right py-1 font-normal">Wt</th><th class="text-right py-1 font-normal">Wtd</th></tr></thead><tbody><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Product Focus</td><td class="py-1.5">3</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right text-emerald-400 font-medium">4.00</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Years of Operation</td><td class="py-1.5">12</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">15%</td><td class="py-1.5 text-right text-emerald-400 font-medium">4.02</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Relationship Length</td><td class="py-1.5">5 yrs</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right text-emerald-400 font-medium">4.00</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Well Known Brands</td><td class="py-1.5">1</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right text-emerald-400 font-medium">4.00</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Buyer Concentration (Top 3)</td><td class="py-1.5">0.66</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right text-emerald-400 font-medium">2.68</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">No. of Buyers</td><td class="py-1.5">40</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">5%</td><td class="py-1.5 text-right text-emerald-400 font-medium">2.00</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Core Buyer (Top10) Lost Ratio</td><td class="py-1.5">46.00%</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right text-emerald-400 font-medium">2.68</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Sales Turnover</td><td class="py-1.5">18,013,531.40</td><td class="py-1.5 text-right">1</td><td class="py-1.5 text-right">5%</td><td class="py-1.5 text-right text-emerald-400 font-medium">2.00</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Txn Frequency</td><td class="py-1.5">4</td><td class="py-1.5 text-right">0.33</td><td class="py-1.5 text-right">10%</td><td class="py-1.5 text-right font-semibold text-white">1.32</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Txn Volatility</td><td class="py-1.5">-6.66%</td><td class="py-1.5 text-right">0.67</td><td class="py-1.5 text-right">5%</td><td class="py-1.5 text-right font-semibold text-white">1.34</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Payment Term</td><td class="py-1.5">120 Days</td><td class="py-1.5 text-right">—</td><td class="py-1.5 text-right">10%</td><td class="py-2.68 text-right font-semibold text-white">0</td></tr><tr class="text-[#c8d6e8] border-t border-[#1a2332]"><td class="py-1.5 text-white">Adverse News</td><td class="py-1.5">—</td><td class="py-1.5 text-right">—</td><td class="py-1.5 text-right">—</td><td class="py-1.5 text-right font-semibold text-white">—</td></tr></tbody></table></div></div></div></div></div></section><section><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Supply Chain Flow <span class="ds-val" title="✅ Validated — confirmed internal data">✅</span></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="py-4"><div class="relative"><div class="absolute top-[24px] left-[10%] right-[10%] h-[3px] bg-gradient-to-r from-amber-500 via-green-500 via-60% via-blue-500 to-purple-500 rounded"></div><div class="relative flex justify-between px-[8%]"><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-amber-500 ring-2 ring-blue-400 ring-offset-2" style="--tw-ring-offset-color:#0f1117">📦</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PROCUREMENT</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#f59e0b20;color:#f59e0b">Partial Data</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#f59e0b20;color:#f59e0b">Medium Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-green-500">🏭</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PRODUCTION</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Score 10/10</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-blue-500">🚢</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">DELIVERY</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#3b82f620;color:#3b82f6">75K+ Shipments</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-purple-500">💰</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PAYMENT</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#a855f720;color:#a855f7">40 Buyers</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button></div></div></div></div></section>
@@ -125,266 +125,280 @@
 <section id="sec-procurement"><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Procurement Intelligence</div><div class="flex flex-wrap gap-2 mb-4 justify-between"><div class="border rounded-lg px-4 py-2 text-center flex-1 min-w-[100px] bg-[#1a2332] border-[#2a3a50]"><div class="text-lg font-bold text-white">4<span class="ds-trd" title="🔍 3rd Party — trade databases / web research">🔍</span></div><div class="text-[10px] uppercase tracking-wider text-[#8899b4]">Materials</div></div><div class="border rounded-lg px-4 py-2 text-center flex-1 min-w-[100px] bg-[#1a2332] border-[#2a3a50]"><div class="text-lg font-bold text-white">~35<span class="ds-trd" title="🔍 3rd Party — trade databases / web research">🔍</span></div><div class="text-[10px] uppercase tracking-wider text-[#8899b4]">Upstream</div></div><div class="border rounded-lg px-4 py-2 text-center flex-1 min-w-[100px] bg-[#1a2332] border-[#2a3a50]"><div class="text-lg font-bold text-white">BCI<span class="ds-trd" title="🔍 3rd Party — certification database">🔍</span></div><div class="text-[10px] uppercase tracking-wider text-[#8899b4]">Yarn Cert</div></div><div class="border rounded-lg px-4 py-2 text-center flex-1 min-w-[100px] bg-[#1a2332] border-[#2a3a50]"><div class="text-lg font-bold text-white">↓ Easing<span class="ds-trd" title="🔍 3rd Party — market research / trade data">🔍</span></div><div class="text-[10px] uppercase tracking-wider text-[#8899b4]">Cost Trend</div></div><div class="border rounded-lg px-4 py-2 text-center flex-1 min-w-[100px] bg-[#1a2332] border-[#2a3a50]"><div class="text-lg font-bold text-white">~90%<span class="ds-prx" title="~ Proxy — estimated/calculated from available data">~</span></div><div class="text-[10px] uppercase tracking-wider text-[#8899b4]">PK Yarn</div></div></div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]" style="display:flex;flex-direction:column"><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Material Flow: Material <!-- -->→<!-- --> Supplier <span class="ds-combo" title="Supplier names: Validated (confirmed from company websites) | Transaction counts: Estimated (no customs data available)">ⓘ</span></div><div style="height:340px;flex:1" class="echarts-for-react "></div><div class="mt-3 pt-3 border-t border-[#2a3a50]"><button onclick="var c=this.nextElementSibling;var open=c.style.display==='none';c.style.display=open?'block':'none';this.querySelector('.ca').textContent=open?'▼':'▶';" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;padding:3px 0;"><span class="text-[10px] uppercase tracking-widest font-semibold text-[#8899b4]">Supplier Certifications <span class="ds-val" title="✅ Validated — confirmed from reliable source">✅</span></span><span class="ca text-[10px] text-[#8899b4]">▶</span></button><div style="display:none;margin-top:6px"><div class="flex items-center gap-2 py-1"><span class="text-xs font-medium text-white">Archroma Pakistan</span><div class="flex flex-wrap gap-1"><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">Reactive Dyes</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">OEKO-TEX</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">ZDHC</span></div></div><div class="flex items-center gap-2 py-1"><span class="text-xs font-medium text-white">CHT Pakistan</span><div class="flex flex-wrap gap-1"><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">OEKO-TEX</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">REACH</span></div></div><div class="flex items-center gap-2 py-1"><span class="text-xs font-medium text-white">Masood Roomi</span><div class="flex flex-wrap gap-1"><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">BCI Certified</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">ISO 9001</span></div></div><div class="flex items-center gap-2 py-1"><span class="text-xs font-medium text-white">Coats Pakistan</span><div class="flex flex-wrap gap-1"><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">ISO 9001</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">OEKO-TEX</span></div></div><div class="flex items-center gap-2 py-1"><span class="text-xs font-medium text-white">Rudolf Pakistan</span><div class="flex flex-wrap gap-1"><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">OEKO-TEX</span><span class="text-[9px] px-1.5 py-0.5 rounded-full font-medium bg-blue-500/15 text-blue-300">bluesign®</span></div></div></div></div>
 </div>
-<div class="space-y-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]"><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Material Cost Trends ($/unit) <span class="ds-na"  title="? No customs data source found publicly for MY BARI imports. Txn counts are industry estimates only.">?</span></div><div id="ga-cost-chart" style="width:100%;height:220px;"></div></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-2 text-[#c8d6e8]">Certification Coverage <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="flex items-center gap-3"><div class="flex-1 h-3 rounded-full overflow-hidden bg-[#2a3a50]"><div class="h-full bg-green-500 rounded-full" style="width:78%"></div></div><span class="text-sm font-bold text-green-400">78%</span></div><div class="flex flex-wrap gap-2 mt-2 text-[10px]"><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Cotton Yarn: BCI 100%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Terry Fabric: OEKO-TEX 90%</span><span class="px-2 py-0.5 rounded-full font-medium bg-yellow-500/20 text-yellow-400">Dyes: ZDHC 80%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Chemicals: REACH 90%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">ISO 9001: 100%</span></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4"><div class="rounded-lg border p-3 border-red-500/40 bg-red-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">🔴</span><div class="flex-1"><div class="text-sm font-semibold text-white">Yarn Supplier Concentration: Top 3 = 73% of Upstream Volume</div><div class="text-xs mt-1 text-[#c8d6e8]">Masood Roomi, Sapphire Fibres, Archroma Pakistan. Top 3 = ~73% of upstream procurement.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Diversify Yarn Sources</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Build Buffer Stock</button></div></div></div></div><div class="rounded-lg border p-3 border-yellow-500/40 bg-yellow-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">⚠️</span><div class="flex-1"><div class="text-sm font-semibold text-white">UFLPA Compliance Gap</div><div class="text-xs mt-1 text-[#c8d6e8]">US Customs requires cotton yarn origin traceability under UFLPA. BCI certification for all yarn batches needed.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Upload Origin Certificates</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Request Supplier Declarations</button></div></div></div></div><div class="rounded-lg border p-3 border-yellow-500/40 bg-yellow-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">⚠️</span><div class="flex-1"><div class="text-sm font-semibold text-white">Pakistan Energy Cost Surge (+40% Gas Tariff)</div><div class="text-xs mt-1 text-[#c8d6e8]">Gas tariffs up +40% YoY. Estimated PKR 1.1B annual cost increase on dyeing and processing for M.Y. Bari's 3 factories.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Review Cost-Plus Clauses</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Monitor Q3 Repricing</button></div></div></div></div><div class="rounded-lg border p-3 border-green-500/40 bg-green-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">✅</span><div class="flex-1"><div class="text-sm font-semibold text-white">PKR/USD Volatility — 30%+ Depreciation Since 2022</div><div class="text-xs mt-1 text-[#c8d6e8]">USD contracts stable but imported dyes/chemicals rose significantly in PKR terms. Review hedging.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Review USD Hedging</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Monitor Monthly</button></div></div></div></div></div></section><section><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Market Insights <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Macro Signals <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="space-y-3"><div><div class="text-[10px] uppercase tracking-widest text-red-400 mb-1">🔴<!-- --> Headwinds</div><div class="space-y-1.5"><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">Pakistan Energy Crisis — gas/electricity tariffs +40% YoY increasing processing costs</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">UFLPA Enforcement — US customs scrutiny on cotton origin for Pakistani textiles</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">PKR Depreciation — imported dyes/chemicals more expensive in local currency</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">EU CBAM — carbon tariff may apply to Pakistani textile exports from 2026</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">Competition from India and Bangladesh on price and lead time</div></div></div><div><div class="text-[10px] uppercase tracking-widest text-green-400 mb-1">🟢<!-- --> Tailwinds</div><div class="space-y-1.5"><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Pakistan GSP+ status — preferential EU tariff access continues</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Post-COVID home textile demand strong globally (bedding, towels)</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Ideas by M.Y. Bari Mills retail expansion — growing domestic revenue</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Dolgencorp (Dollar General) + Lomotex + Action — 3 anchor buyers ensure volume stability</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Automation investment — new looms/digital printing reducing lead time</div></div></div></div></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Data Gap <!-- -->→<!-- --> Risk Improvement</div><table class="w-full text-xs"><thead><tr class="text-[#8899b4] border-b border-[#2a3a50]"><th class="text-left py-2">Data Gap</th><th class="text-left py-2">Current Impact</th><th class="text-left py-2">If Provided</th></tr></thead><tbody><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">WIP Milestones</td><td class="py-2">Pre-ship: Conditional</td><td class="py-2 text-green-400">Recommended +12%</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Cotton Origin Docs</td><td class="py-2">UFLPA: Partial</td><td class="py-2 text-green-400">Full US compliance</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Lab Testing</td><td class="py-2">Quality conservative</td><td class="py-2 text-green-400">QA/QC ↑</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Energy Audit</td><td class="py-2">Cost est. only</td><td class="py-2 text-green-400">Precise pricing</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Carrier Data</td><td class="py-2">TAT reactive</td><td class="py-2 text-green-400">Real-time alerts</td></tr></tbody></table><div class="mt-3 p-2 rounded bg-blue-500/10 border border-blue-500/30 text-xs text-blue-300">💡<!-- --> Providing Providing WIP + origin docs can directly upgrade US shipment compliance</div></div></div></section></div>
-<div id="tab-basic" class="tab-pane">
-  <div class="border rounded-lg p-5 bg-[#1a2332] border-[#2a3a50] mb-4">
-    <div class="flex items-start justify-between flex-wrap gap-4">
-      <div>
-        <div class="flex items-center gap-3 mb-2">
-          <h2 class="text-xl font-bold" style="color:#ffffff">M.Y. Bari Mills (Pvt.) Limited</h2>
-          <span class="text-xs px-2.5 py-1 rounded font-semibold" style="background:#ef444420;color:#ef4444;border:1px solid #ef444440">🏭 Factory</span>
-          <span class="text-xs px-2.5 py-1 rounded font-semibold" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">● Active</span>
-        </div>
-        <div class="flex items-center gap-2 text-sm" style="color:#8899b4">
-          <span>🇵🇰</span><span>Pakistan</span><span style="color:#2a3a50">·</span><span>S.I.T.E., Karachi, Sindh</span>
-        </div>
-      </div>
-      <div class="flex items-center gap-2">
-        <div class="relative w-12 h-12 flex items-center justify-center">
-          <svg viewBox="0 0 56 56" class="w-full h-full absolute"><circle cx="28" cy="28" r="24" fill="none" stroke="#2a3a50" stroke-width="3"></circle><circle cx="28" cy="28" r="24" fill="none" stroke="#3b82f6" stroke-width="3" stroke-dasharray="150.79645" stroke-dashoffset="32.89" stroke-linecap="round" transform="rotate(-90 28 28)"></circle></svg>
-          <span class="text-xs font-bold" style="color:#ffffff">78</span>
-        </div>
-        <div>
-          <div class="text-lg font-bold" style="color:#ffffff">79.32<span class="text-xs font-normal ml-1" style="color:#8899b4">/100</span></div>
-          <span class="text-[10px] px-2 py-0.5 rounded" style="background:#22c55e20;color:#22c55e;font-weight:600">Air8 Rating A</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
-    <div class="lg:col-span-2 border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-3 font-semibold" style="color:#8899b4">Entity Details</div>
-      <div class="space-y-3">
-        <div class="grid grid-cols-2 gap-x-6"><div><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Legal Name</div><div class="text-sm font-medium" style="color:#ffffff">M.Y. Bari Mills (Pvt.) Limited</div></div><div><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Entity Type</div><span class="text-xs px-2 py-0.5 rounded font-medium" style="background:#ef444420;color:#ef4444">Factory</span></div></div>
-        <div class="border-t border-[#2a3a50] pt-3 grid grid-cols-2 gap-x-6"><div><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Country</div><div class="flex items-center gap-1.5 text-sm" style="color:#ffffff"><span>🇵🇰</span> Pakistan</div></div><div><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Status</div><span class="text-xs px-2 py-0.5 rounded" style="background:#22c55e20;color:#22c55e">Active</span></div></div>
-        <div class="border-t border-[#2a3a50] pt-3"><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Address</div><div class="text-sm" style="color:#ffffff">S.I.T.E., Karachi, Sindh, Pakistan</div><div class="text-xs mt-0.5" style="color:#64748b">24.8607° N, 67.0104° E</div></div>
-        <div class="border-t border-[#2a3a50] pt-3"><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Website</div><a href="https://www.barimills.com.pk" target="_blank" class="text-sm hover:underline" style="color:#3b82f6">barimills.com.pk ↗</a></div>
-        <div class="border-t border-[#2a3a50] pt-3"><div class="text-[10px] uppercase tracking-wider mb-2" style="color:#8899b4">Certifications</div><div class="flex flex-wrap gap-1.5"><span class="text-[10px] px-2 py-1 rounded-full font-medium" style="background:#ef444420;color:#ef4444">SEDEX</span><span class="text-[10px] px-2 py-1 rounded-full font-medium" style="background:#ef444420;color:#ef4444">ISO 9001</span><span class="text-[10px] px-2 py-1 rounded-full font-medium" style="background:#ef444420;color:#ef4444">OEKO-TEX</span><span class="text-[10px] px-2 py-1 rounded-full font-medium" style="background:#ef444420;color:#ef4444">BCI</span><span class="text-[10px] px-2 py-1 rounded-full font-medium" style="background:#ef444420;color:#ef4444">WRAP ✓</span></div></div>
-        <div class="border-t border-[#2a3a50] pt-3"><div class="text-[10px] uppercase tracking-wider mb-1" style="color:#8899b4">Notes</div><div class="text-xs leading-relaxed" style="color:#c8d6e8">Home Textiles &amp; Terry Products Manufacturer. Est. 2012, 3 production facilities in S.I.T.E. Complex. 178 looms, 200K+ pcs/month. 40 active buyers. Payment term: 120 days. Air8 Rating A, Vendor Score 79.32/100.</div></div>
-      </div>
-    </div>
-    <div class="flex flex-col gap-4">
-      <div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]">
-        <div class="text-[10px] uppercase tracking-widest mb-3 font-semibold" style="color:#8899b4">Operations</div>
-        <div class="space-y-2.5">
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Years Operating</span><span class="font-semibold" style="color:#ffffff">12 years ✅</span></div>
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Workforce</span><span class="font-semibold" style="color:#ffffff">1,000–5,000 ✅</span></div>
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Factories</span><span class="font-semibold" style="color:#ffffff">3 (self-owned) ✅</span></div>
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Production Lines</span><span class="font-semibold" style="color:#ffffff">178 looms</span></div>
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Monthly Capacity</span><span class="font-semibold" style="color:#ffffff">200K+ pcs/mo</span></div>
-          <div class="flex justify-between text-xs"><span style="color:#8899b4">Lead Time</span><span class="font-semibold" style="color:#ffffff">45–60 Days FOB</span></div>
-        </div>
-      </div>
-      <div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]">
-        <div class="text-[10px] uppercase tracking-widest mb-3 font-semibold" style="color:#8899b4">Air8 Scorecard</div>
-        <div class="space-y-2">
-          <div class="flex justify-between items-center text-xs"><span style="color:#8899b4">Quality</span><div class="flex items-center gap-2"><div class="w-16 h-1 rounded-full" style="background:#2a3a50"><div class="h-1 rounded-full" style="background:#3b82f6;width:94%"></div></div><span style="color:#ffffff;font-weight:600">14.07/15</span></div></div>
-          <div class="flex justify-between items-center text-xs"><span style="color:#8899b4">Performance</span><div class="flex items-center gap-2"><div class="w-16 h-1 rounded-full" style="background:#2a3a50"><div class="h-1 rounded-full" style="background:#3b82f6;width:80%"></div></div><span style="color:#ffffff;font-weight:600">36.08/45</span></div></div>
-          <div class="flex justify-between items-center text-xs"><span style="color:#8899b4">Buyer/Supplier</span><div class="flex items-center gap-2"><div class="w-16 h-1 rounded-full" style="background:#2a3a50"><div class="h-1 rounded-full" style="background:#3b82f6;width:70%"></div></div><span style="color:#ffffff;font-weight:600">28.04/40</span></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-    <div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]"><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold" style="color:#8899b4">Products</div><div class="flex flex-wrap gap-1.5 mb-2"><span class="text-[10px] px-2 py-1 rounded-full" style="background:#ef444420;color:#ef4444;font-weight:600">Bath Towels</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#ef444420;color:#ef4444;font-weight:600">Terry Towels</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#ef444420;color:#ef4444;font-weight:600">Bar Mop Towels</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#2a3a50;color:#c8d6e8;font-weight:600">HS 63023130</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#2a3a50;color:#c8d6e8;font-weight:600">HS 630710</span></div><div class="text-[10px]" style="color:#64748b">Export to USA, Canada, Australia, Europe</div></div>
-    <div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]"><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold" style="color:#8899b4">Key Buyers (40 total)</div><div class="flex flex-wrap gap-1.5 mb-2"><span class="text-[10px] px-2 py-1 rounded-full" style="background:#22c55e20;color:#22c55e;font-weight:600">Action ●</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#22c55e20;color:#22c55e;font-weight:600">Walmart ●</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#22c55e20;color:#22c55e;font-weight:600">Dollar General ●</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#22c55e20;color:#22c55e;font-weight:600">Woolworth GmbH ●</span><span class="text-[10px] px-2 py-1 rounded-full" style="background:#2a3a50;color:#8899b4">+36 more</span></div><div class="text-[10px]" style="color:#64748b">Top-3 concentration: 66% · Payment: 120 days</div></div>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="border rounded-lg p-3" style="background:#f59e0b10;border-color:#f59e0b30"><div class="text-xs font-bold mb-1" style="color:#f59e0b">⚠️ UFLPA Compliance</div><div class="text-xs" style="color:#c8d6e8">US Customs requires cotton yarn origin traceability. BCI certification for all yarn batches needed.</div></div><div class="border rounded-lg p-3" style="background:#ef444410;border-color:#ef444430"><div class="text-xs font-bold mb-1" style="color:#ef4444">🔴 Energy Cost Surge</div><div class="text-xs" style="color:#c8d6e8">Pakistan gas tariffs +40% YoY. Estimated PKR 1.1B annual cost increase across 3 factories.</div></div></div>
-</div>
+<div class="space-y-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50]"><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Material Cost Trends ($/unit) <span class="ds-na"  title="? No customs data source found publicly for MY BARI imports. Txn counts are industry estimates only.">?</span></div><div id="ga-cost-chart" style="width:100%;height:220px;"></div></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-2 text-[#c8d6e8]">Certification Coverage <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="flex items-center gap-3"><div class="flex-1 h-3 rounded-full overflow-hidden bg-[#2a3a50]"><div class="h-full bg-green-500 rounded-full" style="width:78%"></div></div><span class="text-sm font-bold text-green-400">78%</span></div><div class="flex flex-wrap gap-2 mt-2 text-[10px]"><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Cotton Yarn: BCI 100%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Terry Fabric: OEKO-TEX 90%</span><span class="px-2 py-0.5 rounded-full font-medium bg-yellow-500/20 text-yellow-400">Dyes: ZDHC 80%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">Chemicals: REACH 90%</span><span class="px-2 py-0.5 rounded-full font-medium bg-green-500/20 text-green-400">ISO 9001: 100%</span></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4"><div class="rounded-lg border p-3 border-red-500/40 bg-red-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">🔴</span><div class="flex-1"><div class="text-sm font-semibold text-white">Yarn Supplier Concentration: Top 3 = 73% of Upstream Volume</div><div class="text-xs mt-1 text-[#c8d6e8]">Masood Roomi, Sapphire Fibres, Archroma Pakistan. Top 3 = ~73% of upstream procurement.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Diversify Yarn Sources</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Build Buffer Stock</button></div></div></div></div><div class="rounded-lg border p-3 border-yellow-500/40 bg-yellow-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">⚠️</span><div class="flex-1"><div class="text-sm font-semibold text-white">UFLPA Compliance Gap</div><div class="text-xs mt-1 text-[#c8d6e8]">US Customs requires cotton yarn origin traceability under UFLPA. BCI certification for all yarn batches needed.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Upload Origin Certificates</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Request Supplier Declarations</button></div></div></div></div><div class="rounded-lg border p-3 border-yellow-500/40 bg-yellow-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">⚠️</span><div class="flex-1"><div class="text-sm font-semibold text-white">Pakistan Energy Cost Surge (+40% Gas Tariff)</div><div class="text-xs mt-1 text-[#c8d6e8]">Gas tariffs up +40% YoY. Estimated PKR 1.1B annual cost increase on dyeing and processing for M.Y. Bari's 3 factories.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Review Cost-Plus Clauses</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Monitor Q3 Repricing</button></div></div></div></div><div class="rounded-lg border p-3 border-green-500/40 bg-green-500/5"><div class="flex items-start gap-2"><span class="text-base mt-0.5">✅</span><div class="flex-1"><div class="text-sm font-semibold text-white">PKR/USD Volatility — 30%+ Depreciation Since 2022</div><div class="text-xs mt-1 text-[#c8d6e8]">USD contracts stable but imported dyes/chemicals rose significantly in PKR terms. Review hedging.</div><div class="flex flex-wrap gap-1.5 mt-2"><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Review USD Hedging</button><button class="text-[10px] px-2 py-1 rounded border hover:border-slate-500 transition-colors bg-[#1a2332] border-[#2a3a50] text-[#c8d6e8] hover:text-white">Monitor Monthly</button></div></div></div></div></div></section><section><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Market Insights <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-4"><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Macro Signals <span class="ds-trd" title="🔍 3rd Party — web research / trade databases / client data">🔍</span></div><div class="space-y-3"><div><div class="text-[10px] uppercase tracking-widest text-red-400 mb-1">🔴<!-- --> Headwinds</div><div class="space-y-1.5"><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">Pakistan Energy Crisis — gas/electricity tariffs +40% YoY increasing processing costs</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">UFLPA Enforcement — US customs scrutiny on cotton origin for Pakistani textiles</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">PKR Depreciation — imported dyes/chemicals more expensive in local currency</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">EU CBAM — carbon tariff may apply to Pakistani textile exports from 2026</div><div class="text-xs pl-3 border-l-2 border-red-500/40 text-[#c8d6e8]">Competition from India and Bangladesh on price and lead time</div></div></div><div><div class="text-[10px] uppercase tracking-widest text-green-400 mb-1">🟢<!-- --> Tailwinds</div><div class="space-y-1.5"><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Pakistan GSP+ status — preferential EU tariff access continues</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Post-COVID home textile demand strong globally (bedding, towels)</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Ideas by M.Y. Bari Mills retail expansion — growing domestic revenue</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Dolgencorp (Dollar General) + Lomotex + Action — 3 anchor buyers ensure volume stability</div><div class="text-xs pl-3 border-l-2 border-green-500/40 text-[#c8d6e8]">Automation investment — new looms/digital printing reducing lead time</div></div></div></div></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="text-xs font-semibold mb-3 text-[#c8d6e8]">Data Gap <!-- -->→<!-- --> Risk Improvement</div><table class="w-full text-xs"><thead><tr class="text-[#8899b4] border-b border-[#2a3a50]"><th class="text-left py-2">Data Gap</th><th class="text-left py-2">Current Impact</th><th class="text-left py-2">If Provided</th></tr></thead><tbody><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">WIP Milestones</td><td class="py-2">Pre-ship: Conditional</td><td class="py-2 text-green-400">Recommended +12%</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Cotton Origin Docs</td><td class="py-2">UFLPA: Partial</td><td class="py-2 text-green-400">Full US compliance</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Lab Testing</td><td class="py-2">Quality conservative</td><td class="py-2 text-green-400">QA/QC ↑</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Energy Audit</td><td class="py-2">Cost est. only</td><td class="py-2 text-green-400">Precise pricing</td></tr><tr class="border-b border-[#1a2332] text-[#c8d6e8]"><td class="py-2 text-white">Carrier Data</td><td class="py-2">TAT reactive</td><td class="py-2 text-green-400">Real-time alerts</td></tr></tbody></table><div class="mt-3 p-2 rounded bg-blue-500/10 border border-blue-500/30 text-xs text-blue-300">💡<!-- --> Providing Providing WIP + origin docs can directly upgrade US shipment compliance</div></div></div></section></div><div id="tab-basic" class="tab-pane"><!-- basic info --></div>
+<div id="tab-air8" style="display:none">
 
-<div id="tab-air8" class="tab-pane" style="display:none">
-
-  <!-- Header strip matching Air8 dashboard style -->
-  <div class="border rounded-xl mb-4 overflow-hidden" style="background:linear-gradient(135deg,#111827 0%,#1a2640 100%);border-color:#2a3a50">
-    <div class="flex items-start justify-between gap-4 p-5">
-      <div class="flex-1">
-        <div class="flex items-center gap-2 mb-2">
-          <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold" style="background:#f97316;color:#fff">M</div>
-          <span class="text-base font-bold tracking-wide" style="color:#ffffff">M.Y. BARI MILLS (PVT.) LIMITED</span>
-          <span class="text-[10px] px-2 py-0.5 rounded-full font-bold" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">ACTIVATED</span>
+  <!-- Entity Header -->
+  <div style="background:linear-gradient(135deg,#0d1829 0%,#1a2640 100%);border:1px solid #2a3a50;border-radius:12px;padding:20px 24px;margin-bottom:16px">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div style="flex:1">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+          <div style="width:28px;height:28px;border-radius:50%;background:#f97316;color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0">M</div>
+          <span style="font-size:16px;font-weight:800;color:#fff;letter-spacing:.02em">M.Y. BARI MILLS (PVT.) LIMITED</span>
+          <span style="font-size:9px;padding:2px 8px;border-radius:20px;font-weight:700;background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">ACTIVATED</span>
+          <span style="font-size:9px;padding:2px 8px;border-radius:20px;font-weight:700;background:#3b82f620;color:#3b82f6;border:1px solid #3b82f640">sp0000053738</span>
         </div>
-        <p class="text-xs leading-relaxed mb-3" style="color:#8899b4;max-width:640px">Bari Mills is a leading home textiles company specializing in terry products and bath products manufacturing. Operates state-of-the-art facilities in Karachi, Pakistan with three independent manufacturing and quality assurance units. Exports to leading retailers, hospitality and healthcare industries primarily across USA, Canada, Australia, and Europe.</p>
-        <div class="flex flex-wrap gap-3 text-xs" style="color:#8899b4">
-          <span>📍 Plot D-133, Textile Avenue, S.I.T.E., Karachi, Sindh, Pakistan</span>
-          <span>👥 1,000–5,000 employees</span>
-          <span>📅 Est. 2012-01-03</span>
+        <p style="font-size:11px;color:#8899b4;line-height:1.6;max-width:640px;margin-bottom:12px">Bari Mills is a leading home textiles company specializing in terry products and bath products manufacturing. Three independent manufacturing and quality assurance units in Karachi. Exports to leading retailers across USA, Canada, Australia, and Europe.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:10px;color:#8899b4">
+          <span>📍 Plot D-133, Textile Avenue, S.I.T.E., Karachi</span>
+          <span>👥 1,000–5,000</span>
+          <span>📅 Est. 2012</span>
           <span>🌐 <a href="https://barimills.com.pk" target="_blank" style="color:#3b82f6">barimills.com.pk</a></span>
           <span>🏭 Other manufacturing</span>
         </div>
       </div>
-      <!-- Performance Rating gauge -->
-      <div class="text-center flex-shrink-0">
-        <div class="text-[10px] uppercase tracking-widest mb-2" style="color:#8899b4">Performance Rating</div>
-        <div class="relative w-24 h-16 mx-auto">
-          <svg viewBox="0 0 96 56" class="w-full h-full">
-            <path d="M8,48 A40,40 0 0,1 88,48" fill="none" stroke="#2a3a50" stroke-width="8" stroke-linecap="round"/>
-            <path d="M8,48 A40,40 0 0,1 88,48" fill="none" stroke="url(#rg)" stroke-width="8" stroke-linecap="round" stroke-dasharray="125.7" stroke-dashoffset="31"/>
-            <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ef4444"/><stop offset="50%" stop-color="#eab308"/><stop offset="100%" stop-color="#22c55e"/></linearGradient></defs>
+      <!-- Performance gauge -->
+      <div style="text-align:center;flex-shrink:0">
+        <div style="font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#8899b4;margin-bottom:8px">Performance Rating</div>
+        <div style="position:relative;width:90px;height:60px;margin:0 auto">
+          <svg viewBox="0 0 90 55" style="width:100%;height:100%">
+            <path d="M5,50 A40,40 0 0,1 85,50" fill="none" stroke="#2a3a50" stroke-width="8" stroke-linecap="round"/>
+            <path d="M5,50 A40,40 0 0,1 85,50" fill="none" stroke="url(#rg2)" stroke-width="8" stroke-linecap="round" stroke-dasharray="125.7" stroke-dashoffset="30"/>
+            <defs><linearGradient id="rg2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#ef4444"/><stop offset="50%" stop-color="#eab308"/><stop offset="100%" stop-color="#22c55e"/></linearGradient></defs>
           </svg>
-          <div class="absolute inset-0 flex flex-col items-center justify-end pb-1">
-            <span class="text-2xl font-black" style="color:#ffffff">A</span>
+          <div style="position:absolute;bottom:0;left:0;right:0;text-align:center">
+            <span style="font-size:22px;font-weight:900;color:#fff">A</span>
           </div>
         </div>
-        <div class="text-[10px]" style="color:#8899b4">Total Score</div>
+        <div style="font-size:9px;color:#8899b4;margin-top:2px">Total Score: 78.19</div>
       </div>
     </div>
   </div>
 
-  <!-- Highlights grid (6 cards matching Air8 dashboard) -->
-  <div class="grid grid-cols-3 gap-3 mb-4">
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">Recognition</div>
-      <div class="text-sm font-bold" style="color:#22c55e">Established</div>
-      <div class="text-[10px] mt-1" style="color:#64748b">Score: 60–79</div>
+  <!-- 6 Highlights -->
+  <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:16px">
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">Recognition</div>
+      <div style="font-size:12px;font-weight:700;color:#22c55e">Established</div>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">Score 60–79</div>
     </div>
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">MOQ</div>
-      <div class="text-sm font-bold" style="color:#3b82f6">Medium</div>
-      <div class="text-[10px] mt-1" style="color:#64748b">500–999 units</div>
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">MOQ</div>
+      <div style="font-size:12px;font-weight:700;color:#3b82f6">Medium</div>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">500–999 units</div>
     </div>
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">Litigation</div>
-      <div class="text-sm font-bold" style="color:#8899b4">—</div>
-      <div class="text-[10px] mt-1" style="color:#64748b">No active cases</div>
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">Litigation</div>
+      <div style="font-size:12px;font-weight:700;color:#8899b4">—</div>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">No cases</div>
     </div>
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">Quality</div>
-      <div class="text-sm font-bold" style="color:#22c55e">Excellent</div>
-      <div class="text-[10px] mt-1" style="color:#64748b">Vertically integrated</div>
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">Quality</div>
+      <div style="font-size:12px;font-weight:700;color:#22c55e">Excellent</div>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">Vertically integrated</div>
     </div>
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">Cost</div>
-      <div class="text-sm font-bold" style="color:#22c55e">Competitive</div>
-      <div class="text-[10px] mt-1" style="color:#64748b">SBP LTFF &amp; ERF rates</div>
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">Cost</div>
+      <div style="font-size:12px;font-weight:700;color:#22c55e">Competitive</div>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">SBP LTFF rates</div>
     </div>
-    <div class="border rounded-lg p-3 bg-[#1a2332] border-[#2a3a50]">
-      <div class="text-[10px] uppercase tracking-widest mb-1" style="color:#8899b4">Recommendation</div>
-      <div class="flex items-center gap-1.5"><span class="text-xs px-2 py-0.5 rounded font-bold" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">AS ↑</span></div>
-      <div class="text-[10px] mt-1" style="color:#64748b">Neutral stance</div>
+    <div style="border:1px solid #2a3a50;border-radius:10px;padding:12px;background:#1a2332">
+      <div style="font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:#8899b4;margin-bottom:4px">Recommendation</div>
+      <span style="font-size:11px;font-weight:700;background:#22c55e20;color:#22c55e;border:1px solid #22c55e40;border-radius:8px;padding:2px 7px">AS ↑</span>
+      <div style="font-size:9px;color:#64748b;margin-top:2px">Neutral</div>
     </div>
   </div>
 
-  <!-- 2-col layout: Basic Info + Highlights breakdown -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+  <!-- Vendor Score + Products -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
 
-    <!-- Basic Info table -->
-    <div class="lg:col-span-2 border rounded-xl bg-[#1a2332] border-[#2a3a50] overflow-hidden">
-      <div class="px-4 py-3 border-b border-[#2a3a50] flex items-center justify-between">
-        <span class="text-xs font-bold uppercase tracking-widest" style="color:#8899b4">Basic Information</span>
-        <span class="text-[10px] px-2 py-0.5 rounded" style="background:#3b82f620;color:#3b82f6">Air8 Credit Dashboard</span>
+    <!-- Vendor Score breakdown -->
+    <div style="border:1px solid #2a3a50;border-radius:12px;background:#1a2332;overflow:hidden">
+      <div style="padding:12px 16px;border-bottom:1px solid #2a3a50;display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:11px;font-weight:700;color:#fff">Vendor Score Breakdown</span>
+        <span style="font-size:9px;color:#8899b4">Buyer: Action Service &amp; Distributie B.V.</span>
       </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-xs">
+      <div style="padding:14px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:12px">
+          <div style="text-align:center">
+            <div style="font-size:20px;font-weight:900;color:#3b82f6">78.19</div>
+            <div style="font-size:9px;color:#8899b4">Total Score</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:18px;font-weight:700;color:#22c55e">14.07<span style="font-size:10px;font-weight:400;color:#8899b4">/15</span></div>
+            <div style="font-size:9px;color:#8899b4">Quality</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:18px;font-weight:700;color:#eab308">36.08<span style="font-size:10px;font-weight:400;color:#8899b4">/45</span></div>
+            <div style="font-size:9px;color:#8899b4">Performance</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:18px;font-weight:700;color:#8b5cf6">28.04<span style="font-size:10px;font-weight:400;color:#8899b4">/40</span></div>
+            <div style="font-size:9px;color:#8899b4">Buyer/Supplier</div>
+          </div>
+        </div>
+        <div style="space-y:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <span style="font-size:10px;color:#8899b4">Quality (Pctile: 94)</span>
+            <div style="display:flex;align-items:center;gap:8px"><div style="width:100px;height:4px;background:#2a3a50;border-radius:2px"><div style="background:#22c55e;height:4px;border-radius:2px;width:94%"></div></div><span style="font-size:10px;color:#22c55e;font-weight:600">94th</span></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <span style="font-size:10px;color:#8899b4">Performance (Pctile: 3)</span>
+            <div style="display:flex;align-items:center;gap:8px"><div style="width:100px;height:4px;background:#2a3a50;border-radius:2px"><div style="background:#ef4444;height:4px;border-radius:2px;width:3%"></div></div><span style="font-size:10px;color:#ef4444;font-weight:600">3rd</span></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:10px;color:#8899b4">Buyer/Supplier (Pctile: 74)</span>
+            <div style="display:flex;align-items:center;gap:8px"><div style="width:100px;height:4px;background:#2a3a50;border-radius:2px"><div style="background:#8b5cf6;height:4px;border-radius:2px;width:74%"></div></div><span style="font-size:10px;color:#8b5cf6;font-weight:600">74th</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Analysis -->
+    <div style="border:1px solid #2a3a50;border-radius:12px;background:#1a2332;overflow:hidden">
+      <div style="padding:12px 16px;border-bottom:1px solid #2a3a50">
+        <span style="font-size:11px;font-weight:700;color:#fff">Product Analysis</span>
+      </div>
+      <div style="padding:14px">
+        <table style="width:100%;border-collapse:collapse;font-size:10px">
           <thead><tr style="background:#111827">
-            <th class="text-left px-4 py-2 font-semibold" style="color:#8899b4">Years In Operation</th>
-            <th class="text-left px-4 py-2 font-semibold" style="color:#8899b4">Country</th>
-            <th class="text-left px-4 py-2 font-semibold" style="color:#8899b4">Main Activity</th>
-            <th class="text-left px-4 py-2 font-semibold" style="color:#8899b4">Factories</th>
-            <th class="text-left px-4 py-2 font-semibold" style="color:#8899b4">Business Type</th>
+            <th style="text-align:left;padding:6px 8px;color:#8899b4;font-weight:600">Category</th>
+            <th style="text-align:left;padding:6px 8px;color:#8899b4;font-weight:600">HS Code</th>
+            <th style="text-align:left;padding:6px 8px;color:#8899b4;font-weight:600">Product</th>
+            <th style="text-align:left;padding:6px 8px;color:#8899b4;font-weight:600">Material</th>
           </tr></thead>
-          <tbody><tr class="border-t border-[#2a3a50]">
-            <td class="px-4 py-3" style="color:#ffffff">Since 2012 (~12 yrs)</td>
-            <td class="px-4 py-3" style="color:#ffffff">🇵🇰 Pakistan</td>
-            <td class="px-4 py-3" style="color:#c8d6e8">Home textiles manufacturing &amp; export — terry products &amp; bath products</td>
-            <td class="px-4 py-3" style="color:#ffffff">3 units (Weaving, Processing, Stitching)</td>
-            <td class="px-4 py-3" style="color:#c8d6e8">Other manufacturing</td>
-          </tr></tbody>
+          <tbody>
+            <tr style="border-top:1px solid #2a3a50"><td style="padding:6px 8px;color:#c8d6e8">Towels</td><td style="padding:6px 8px;font-family:monospace;color:#8899b4">630260</td><td style="padding:6px 8px;color:#fff;font-weight:600">Bar Mop Towel</td><td style="padding:6px 8px;color:#c8d6e8">Cotton</td></tr>
+            <tr style="border-top:1px solid #2a3a50"><td style="padding:6px 8px;color:#c8d6e8">Towels</td><td style="padding:6px 8px;font-family:monospace;color:#8899b4">630260</td><td style="padding:6px 8px;color:#fff;font-weight:600">Bath Towel</td><td style="padding:6px 8px;color:#c8d6e8">Cotton</td></tr>
+            <tr style="border-top:1px solid #2a3a50"><td style="padding:6px 8px;color:#c8d6e8">Towels</td><td style="padding:6px 8px;font-family:monospace;color:#8899b4">630260</td><td style="padding:6px 8px;color:#fff;font-weight:600">Washcloth</td><td style="padding:6px 8px;color:#c8d6e8">Cotton</td></tr>
+            <tr style="border-top:1px solid #2a3a50"><td style="padding:6px 8px;color:#c8d6e8">Other textile</td><td style="padding:6px 8px;font-family:monospace;color:#8899b4">630710</td><td style="padding:6px 8px;color:#fff;font-weight:600">Terry Towel</td><td style="padding:6px 8px;color:#c8d6e8">Cotton</td></tr>
+          </tbody>
         </table>
-      </div>
-      <!-- Sub-sections -->
-      <div class="p-4 space-y-4">
-        <div class="border-t border-[#2a3a50] pt-4">
-          <div class="text-xs font-bold mb-2" style="color:#ffffff">Export Markets &amp; Products</div>
-          <div class="grid grid-cols-2 gap-3 text-xs">
-            <div><span style="color:#8899b4">Primary Markets: </span><span style="color:#c8d6e8">USA, Canada, Australia, Europe</span></div>
-            <div><span style="color:#8899b4">Key Products: </span><span style="color:#c8d6e8">Terry products, bath products, home textiles</span></div>
+        <div style="margin-top:10px;padding:8px;background:#111827;border-radius:6px">
+          <div style="font-size:9px;color:#8899b4;margin-bottom:4px">Export Distribution (Qty)</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#3b82f620;color:#3b82f6">🇺🇸 USA 950 (53%)</span>
+            <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#8b5cf620;color:#8b5cf6">🇩🇪 Germany 852</span>
+            <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#06b6d420;color:#06b6d4">🇳🇱 Netherlands 336</span>
+            <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#22c55e20;color:#22c55e">🇳🇴 Norway 70</span>
+            <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#f9731620;color:#f97316">🇵🇱 Poland 22</span>
           </div>
         </div>
-        <div class="border-t border-[#2a3a50] pt-4">
-          <div class="text-xs font-bold mb-2" style="color:#ffffff">Factory Details</div>
-          <div class="grid grid-cols-2 gap-3 text-xs">
-            <div><span style="color:#8899b4">Facilities: </span><span style="color:#c8d6e8">3 manufacturing units</span></div>
-            <div><span style="color:#8899b4">Location: </span><span style="color:#c8d6e8">Karachi, Sindh, Pakistan</span></div>
-            <div class="col-span-2"><span style="color:#8899b4">Capabilities: </span><span style="color:#c8d6e8">Dedicated facilities for Weaving, Processing and Stitching — each with independent quality teams</span></div>
-          </div>
-        </div>
-        <div class="border-t border-[#2a3a50] pt-4">
-          <div class="text-xs font-bold mb-2" style="color:#ffffff">Ownership Structure</div>
-          <div class="text-xs"><span style="color:#8899b4">Listing Status: </span><span style="color:#c8d6e8">Private</span></div>
-        </div>
-        <div class="border-t border-[#2a3a50] pt-4">
-          <div class="text-xs font-bold mb-2" style="color:#ffffff">Financial Highlights</div>
-          <div class="text-xs space-y-1">
-            <div><span style="color:#8899b4">Revenue: </span><span style="color:#c8d6e8">Less than 5 million USD (estimated)</span></div>
-            <div class="leading-relaxed" style="color:#64748b">Limited financial data available. Employee count (1,000–5,000) suggests operational scale may differ from reported revenue figures.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Highlights breakdown (right) -->
-    <div class="border rounded-xl bg-[#1a2332] border-[#2a3a50] overflow-hidden">
-      <div class="px-4 py-3 border-b border-[#2a3a50]">
-        <span class="text-xs font-bold uppercase tracking-widest" style="color:#8899b4">Highlights Analysis</span>
-      </div>
-      <div class="p-4 space-y-4">
-
-        <div>
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">Recognition</span>
-            <span class="text-[10px] px-2 py-0.5 rounded" style="background:#22c55e20;color:#22c55e">Established (60-79)</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">12-year history, exports to USA, Germany, Norway &amp; Sweden. Bari family's six-decade textile legacy, 178 looms. High customer concentration (~42% one client) limits tier.</div>
-        </div>
-
-        <div class="border-t border-[#2a3a50] pt-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">MOQ</span>
-            <span class="text-[10px] px-2 py-0.5 rounded" style="background:#3b82f620;color:#3b82f6">Medium (500-999)</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">Annual output exceeding 2 million pieces, 178 looms. Bulk towel production model requires 500–999 unit minimums for wholesale orders.</div>
-        </div>
-
-        <div class="border-t border-[#2a3a50] pt-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">Quality</span>
-            <span class="text-[10px] px-2 py-0.5 rounded" style="background:#22c55e20;color:#22c55e">Excellent</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">Vertically integrated (weaving, dyeing, finishing under one roof). SEDEX certified. Jacquard looms &amp; automated stitching systems ensure consistent output.</div>
-        </div>
-
-        <div class="border-t border-[#2a3a50] pt-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">Cost</span>
-            <span class="text-[10px] px-2 py-0.5 rounded" style="background:#22c55e20;color:#22c55e">Competitive</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">Leverages SBP concessionary rates (LTFF &amp; ERF). Competitive pricing maintained despite 22% policy rate environment.</div>
-        </div>
-
-        <div class="border-t border-[#2a3a50] pt-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">Key Milestone</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">Established export capability to major markets. 31% of workforce with 11+ years tenure — strong operational stability signal.</div>
-        </div>
-
-        <div class="border-t border-[#2a3a50] pt-3">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-bold" style="color:#ffffff">Signals</span>
-            <span class="text-[10px] px-2 py-0.5 rounded" style="background:#64748b20;color:#94a3b8">Neutral</span>
-          </div>
-          <div class="text-[10px] leading-relaxed" style="color:#64748b">No recent news or media as of March 2026. Limited financial data warrants cautious approach despite stable operations.</div>
-        </div>
-
       </div>
     </div>
   </div>
 
-  <!-- Source attribution -->
-  <div class="flex items-center gap-2 text-[10px]" style="color:#475569">
+  <!-- Buyer List -->
+  <div style="border:1px solid #2a3a50;border-radius:12px;background:#1a2332;overflow:hidden;margin-bottom:14px">
+    <div style="padding:12px 16px;border-bottom:1px solid #2a3a50;display:flex;justify-content:space-between;align-items:center">
+      <span style="font-size:11px;font-weight:700;color:#fff">Buyer List</span>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:9px;color:#8899b4">51 total buyers · Last updated: 2026-01-29</span>
+        <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#2a3a50;color:#8899b4">Transactions: last 1 year</span>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse;font-size:10px">
+      <thead><tr style="background:#111827">
+        <th style="text-align:left;padding:7px 12px;color:#8899b4;font-weight:600">Buyer Name</th>
+        <th style="text-align:left;padding:7px 12px;color:#8899b4;font-weight:600">Country</th>
+        <th style="text-align:center;padding:7px 12px;color:#8899b4;font-weight:600">Txn</th>
+        <th style="text-align:left;padding:7px 12px;color:#8899b4;font-weight:600">External Rating</th>
+        <th style="text-align:center;padding:7px 12px;color:#8899b4;font-weight:600">Int. Risk</th>
+        <th style="text-align:center;padding:7px 12px;color:#8899b4;font-weight:600">Review</th>
+      </tr></thead>
+      <tbody>
+        <tr style="border-top:1px solid #2a3a50">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#ef444420;color:#ef4444;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">R</span><span style="color:#3b82f6;font-weight:600;font-size:11px">ROSS STORES, INC.</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇺🇸 United States</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">11</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#22c55e20;color:#22c55e">BBB+/Stable</span></td>
+          <td style="padding:8px 12px;text-align:center"><span style="font-size:10px;font-weight:700;color:#22c55e">A</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★★★ 5.0</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#3b82f620;color:#3b82f6;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">T</span><span style="color:#3b82f6;font-weight:600;font-size:11px">THE KROGER CO.</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇺🇸 United States</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">4</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#22c55e20;color:#22c55e">BBB/Stable</span></td>
+          <td style="padding:8px 12px;text-align:center"><span style="font-size:10px;font-weight:700;color:#22c55e">A</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★½ 3.4</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50;background:#1e2d40">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#f9731620;color:#f97316;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">A</span><span style="color:#3b82f6;font-weight:600;font-size:11px">ACTION SERVICE &amp; DISTRIBUTIE B.V.</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇳🇱 Netherlands</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">336</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#eab30820;color:#eab308">BB-/Stable</span></td>
+          <td style="padding:8px 12px;text-align:center"><span style="font-size:10px;font-weight:700;color:#2563eb">B</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★★ 4.0</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#8b5cf620;color:#8b5cf6;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">W</span><span style="color:#3b82f6;font-weight:600;font-size:11px">WOOLWORTH GMBH</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇩🇪 Germany</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">242</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#2a3a50;color:#8899b4">—</span></td>
+          <td style="padding:8px 12px;text-align:center"><span style="font-size:10px;font-weight:700;color:#2563eb">B</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★ 3.0</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50;background:#1e2d40">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#06b6d420;color:#06b6d4;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">C</span><span style="color:#3b82f6;font-weight:600;font-size:11px">COOP NORGE SA</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇳🇴 Norway</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">70</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#2a3a50;color:#8899b4">—</span></td>
+          <td style="padding:8px 12px;text-align:center"><span style="font-size:10px;font-weight:700;color:#2563eb">B</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★★ 4.0</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#ec489920;color:#ec4899;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">P</span><span style="color:#3b82f6;font-weight:600;font-size:11px">PEPCO HOLDINGS SP Z O O</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇵🇱 Poland</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">18</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#2a3a50;color:#8899b4">—</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#8899b4;font-size:9px">—</td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★ 3.0</td>
+        </tr>
+        <tr style="border-top:1px solid #2a3a50;background:#1e2d40">
+          <td style="padding:8px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="width:20px;height:20px;border-radius:50%;background:#22c55e20;color:#22c55e;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0">R</span><span style="color:#3b82f6;font-weight:600;font-size:11px">REWE GROUP</span></div></td>
+          <td style="padding:8px 12px;color:#c8d6e8">🇩🇪 Germany</td><td style="padding:8px 12px;text-align:center;color:#fff;font-weight:600">3</td>
+          <td style="padding:8px 12px"><span style="font-size:9px;padding:2px 6px;border-radius:6px;background:#2a3a50;color:#8899b4">NR</span></td>
+          <td style="padding:8px 12px;text-align:center;color:#8899b4;font-size:9px">—</td>
+          <td style="padding:8px 12px;text-align:center;color:#f59e0b;font-size:10px">★★★½ 3.6</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div style="padding:10px 16px;border-top:1px solid #2a3a50;display:flex;align-items:center;justify-content:between;gap:16px">
+      <div style="font-size:9px;color:#8899b4">Showing 7 of 51 buyers · 3 pages</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-left:auto">
+        <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#22c55e20;color:#22c55e">🇺🇸 USA #4 buyers</span>
+        <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#8b5cf620;color:#8b5cf6">🇩🇪 Germany #5 buyers</span>
+        <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#06b6d420;color:#06b6d4">🇵🇱 Poland #2 buyers</span>
+        <span style="font-size:9px;padding:2px 7px;border-radius:10px;background:#f9731620;color:#f97316">🇳🇴 Norway #1 buyers</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shipment Origin + Footer -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+    <div style="border:1px solid #2a3a50;border-radius:12px;background:#1a2332;padding:14px">
+      <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:10px">Shipment Origin Countries</div>
+      <div style="space-y:8px">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="font-size:10px;color:#c8d6e8;width:80px">🇵🇰 Pakistan</span>
+          <div style="flex:1;height:6px;background:#2a3a50;border-radius:3px"><div style="background:#3b82f6;height:6px;border-radius:3px;width:99%"></div></div>
+          <span style="font-size:10px;font-weight:700;color:#3b82f6;width:50px;text-align:right">#2,706 (98.69%)</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <span style="font-size:10px;color:#c8d6e8;width:80px">🇴🇲 Oman</span>
+          <div style="flex:1;height:6px;background:#2a3a50;border-radius:3px"><div style="background:#8b5cf6;height:6px;border-radius:3px;width:1.24%"></div></div>
+          <span style="font-size:10px;font-weight:700;color:#8b5cf6;width:50px;text-align:right">#34 (1.24%)</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:10px;color:#c8d6e8;width:80px">🇱🇰 Sri Lanka</span>
+          <div style="flex:1;height:6px;background:#2a3a50;border-radius:3px"><div style="background:#22c55e;height:6px;border-radius:3px;width:0.5%"></div></div>
+          <span style="font-size:10px;font-weight:700;color:#22c55e;width:50px;text-align:right">#2 (0.07%)</span>
+        </div>
+      </div>
+    </div>
+    <div style="border:1px solid #2a3a50;border-radius:12px;background:#1a2332;padding:14px">
+      <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:10px">Key Intelligence</div>
+      <div style="space-y:6px;font-size:10px;line-height:1.6">
+        <div style="color:#c8d6e8;padding:6px 0;border-bottom:1px solid #2a3a50">🔵 <strong>Market Reliance:</strong> <span style="color:#8899b4">53.44% transaction volume to USA — vulnerability to trade policy changes</span></div>
+        <div style="color:#c8d6e8;padding:6px 0;border-bottom:1px solid #2a3a50">🟢 <strong>Material:</strong> <span style="color:#8899b4">100% cotton composition — cost volatility risk; sustainable material diversification suggested</span></div>
+        <div style="color:#c8d6e8;padding:6px 0;border-bottom:1px solid #2a3a50">🔵 <strong>Customer Concentration:</strong> <span style="color:#8899b4">~42% revenue from one client limits recognition tier to Established</span></div>
+        <div style="color:#c8d6e8;padding:6px 0">🟢 <strong>Workforce:</strong> <span style="color:#8899b4">31% with 11+ years tenure — strong operational stability</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attribution -->
+  <div style="display:flex;align-items:center;gap:8px;font-size:9px;color:#475569;padding-top:4px">
     <span>📊</span>
-    <span>Source: Air8 Credit Dashboard — Internal Dashboard / Supplier Detail / sp0000053738</span>
-    <span class="ml-2 px-2 py-0.5 rounded" style="background:#1a2332;color:#64748b;border:1px solid #2a3a50">Last refreshed: Jun 23, 2026</span>
+    <span>Source: Air8 LFX Credit Dashboard · Supplier Detail · sp0000053738 · M.Y. Bari Mills (Pvt.) Limited</span>
+    <span style="margin-left:8px;padding:2px 8px;border-radius:10px;background:#1a2332;color:#64748b;border:1px solid #2a3a50">Last Updated: 2026-01-29</span>
   </div>
 
 </div>
@@ -839,14 +853,10 @@ window.addEventListener('load', function() {
 
 
 <script>
-function showTab(name) {
-  document.querySelectorAll('[id^="tab-"]').forEach(p => p.style.display = 'none');
-  ['basic','scorecard','air8'].forEach(function(k) {
-    var b = document.getElementById('btn-'+k);
-    if(b) { b.style.background='transparent'; b.style.color='#8899b4'; b.style.borderColor='transparent'; b.style.borderBottomColor='#2a3a50'; }
-  });
-  document.getElementById('tab-'+name).style.display='';
-  var active = document.getElementById('btn-'+name);
-  if(active) { active.style.background='#1a2332'; active.style.color='#ffffff'; active.style.borderColor='#2a3a50'; active.style.borderBottomColor='#1a2332'; }
+function showTab(n) {
+  document.querySelectorAll("[id^=tab-]").forEach(p=>p.style.display="none");
+  ["basic","scorecard","air8"].forEach(k=>{var b=document.getElementById("btn-"+k);if(b){b.style.background="transparent";b.style.color="#8899b4";b.style.borderColor="transparent";b.style.borderBottomColor="#2a3a50";}});
+  document.getElementById("tab-"+n).style.display="";
+  var a=document.getElementById("btn-"+n);if(a){a.style.background="#1a2332";a.style.color="#fff";a.style.borderColor="#2a3a50";a.style.borderBottomColor="#1a2332";}
 }
 </script>
