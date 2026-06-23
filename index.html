@@ -19,22 +19,30 @@
 .bi-hl{background:#1a2332;border:1px solid #2a3a50;border-radius:8px;padding:10px 12px}
 .bi-hl-lbl{font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
 .bi-hl-val{font-size:11px;font-weight:800}
-/* Globe-style insight cards */
-.ins{border:1px solid #2a3a50;border-radius:8px;padding:12px 14px;position:relative;overflow:hidden;background:#1a2332;transition:border-color .15s;display:flex;flex-direction:column}
+.ins{border:1px solid #2a3a50;border-radius:8px;padding:12px 14px;position:relative;overflow:hidden;background:#1a2332;transition:border-color .15s;margin-bottom:8px}
+.ins:last-child{margin-bottom:0}
 .ins:hover{border-color:#3b4f6a}
 .ins::before{content:'';position:absolute;top:0;left:0;bottom:0;width:3px}
 .ins.po::before{background:#22c55e}.ins.hi::before{background:#eab308}.ins.cr::before{background:#ef4444}
-.is{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.is{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
 .ins.po .is{color:#22c55e}.ins.hi .is{color:#eab308}.ins.cr .is{color:#ef4444}
-.it{font-size:10px;color:#94a3b8;line-height:1.65;flex:1}
-.it b{color:#c8d6e8}
-.ia{font-size:9px;color:#475569;margin-top:6px;font-style:italic;padding-top:6px;border-top:1px solid #1e2d40}
-/* Pain point cards */
+.ins-row{display:flex;gap:6px;align-items:baseline;margin-bottom:4px}
+.ins-lbl{font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;min-width:34px;padding:2px 5px;border-radius:4px;text-align:center;flex-shrink:0;line-height:1.4}
+.ins-lbl.news{background:#1e2d40;color:#64748b}
+.ins-lbl.why{background:#1e2d40;color:#8899b4}
+.ins-lbl.what{background:#1e3a28;color:#22c55e}
+.ins-txt{font-size:10px;color:#94a3b8;line-height:1.55}
+.ins-txt b{color:#c8d6e8}
+.ins-what{font-size:10px;color:#c8d6e8;line-height:1.55;font-weight:600}
+.ins-ref{font-size:8px;color:#334155;margin-top:6px;font-style:italic;padding-top:5px;border-top:1px solid #1e2d40}
 .bi-pp{background:#1a2332;border:1px solid #2a3a50;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
-/* Equal height columns */
-.bi-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.bi-col{display:flex;flex-direction:column;gap:8px}
-.bi-col .bi-pp:last-child,.bi-col .ins:last-child{flex:1}
+.bi-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.bi-col{display:flex;flex-direction:column}
+.bi-col-scroll{overflow-y:auto;flex:1;padding-right:4px}
+.bi-col-scroll::-webkit-scrollbar{width:3px}
+.bi-col-scroll::-webkit-scrollbar-track{background:#0d1829;border-radius:3px}
+.bi-col-scroll::-webkit-scrollbar-thumb{background:#2a3a50;border-radius:3px}
+.bi-col-scroll::-webkit-scrollbar-thumb:hover{background:#3b4f6a}
 </style>
 
 <!-- 4 KEY METRICS -->
@@ -45,95 +53,119 @@
   <div class="bi-kpi"><div class="bi-kpi-val" style="font-size:13px">USA · EU · AU · NO</div><div class="bi-kpi-lbl">Export Markets</div></div>
 </div>
 
-<!-- PULSELINK HIGHLIGHTS -->
+<!-- HIGHLIGHTS -->
 <div class="bi-sec">Highlights</div>
 <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
   <div class="bi-hl"><div class="bi-hl-lbl">Recognition</div><div class="bi-hl-val" style="color:#22c55e">Established</div><div style="font-size:8px;color:#475569;margin-top:2px">(60–79)</div></div>
   <div class="bi-hl"><div class="bi-hl-lbl">MOQ</div><div class="bi-hl-val" style="color:#3b82f6">Medium</div><div style="font-size:8px;color:#475569;margin-top:2px">500–999 units</div></div>
-  <div class="bi-hl"><div class="bi-hl-val" style="color:#22c55e;margin-top:2px">Excellent</div><div class="bi-hl-lbl" style="margin-top:4px">Quality</div><div style="font-size:8px;color:#475569;margin-top:2px">14.07 / 15</div></div>
+  <div class="bi-hl"><div class="bi-hl-lbl">Quality</div><div class="bi-hl-val" style="color:#22c55e">Excellent</div><div style="font-size:8px;color:#475569;margin-top:2px">14.07 / 15</div></div>
   <div class="bi-hl"><div class="bi-hl-lbl">Cost</div><div class="bi-hl-val" style="color:#22c55e">Competitive</div><div style="font-size:8px;color:#475569;margin-top:2px">LTFF &amp; ERF rated</div></div>
   <div class="bi-hl" style="border-color:#3b82f635"><div class="bi-hl-lbl">Active Buyers</div><div class="bi-hl-val" style="color:#f97316;font-size:20px">40</div><div style="font-size:8px;color:#475569;margin-top:2px">OA 120 days</div></div>
 </div>
 
-<!-- PAIN POINTS + ACTIONABLE INSIGHTS -->
+<!-- INTEL -->
 <div class="bi-sec">Intel</div>
 <div class="bi-2col">
 
-  <!-- LEFT: Pain Points (KB: COMBO-009 Pakistan Home Textile) -->
-  <div class="bi-col">
-    <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b;margin-bottom:2px">Pain Points <span style="color:#334155;font-weight:400;text-transform:none;letter-spacing:0;font-style:italic">— KB: COMBO-009</span></div>
+  <!-- LEFT: Pain Points -->
+  <div class="bi-col" style="gap:8px">
+    <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b">Pain Points <span style="color:#334155;font-weight:400;font-style:italic;text-transform:none;letter-spacing:0">KB: COMBO-009</span></div>
 
     <div class="bi-pp">
       <div style="display:flex">
-        <div style="width:40px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:13px">
+        <div style="width:38px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:12px">
           <span style="width:22px;height:22px;border-radius:50%;background:#ef444415;border:1px solid #ef444440;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#ef4444">1</span>
         </div>
-        <div style="flex:1;padding:11px 13px 11px 0">
+        <div style="flex:1;padding:10px 12px 10px 0">
           <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap">
             <div style="font-size:11px;font-weight:800;color:#e2e8f0">Energy × Financing Cost Squeeze</div>
-            <span style="font-size:7px;font-weight:700;padding:1px 6px;border-radius:8px;background:#ef444415;color:#ef4444;border:1px solid #ef444430;white-space:nowrap">Critical</span>
+            <span style="font-size:7px;font-weight:700;padding:1px 5px;border-radius:6px;background:#ef444415;color:#ef4444;border:1px solid #ef444430">Critical</span>
           </div>
-          <div style="font-size:9px;color:#64748b;line-height:1.65">Electricity 2× India &amp; Bangladesh — generator fuel adds 10–20% per production run <em>(PP-PK-001)</em>. Combined with SBP bank rates at 15–22% p.a., the factory faces a structural cost double-squeeze. Local credit is effectively inaccessible; SBP FX controls also limit USD availability for imported inputs.</div>
-          <div style="font-size:8px;color:#334155;margin-top:4px;font-style:italic">Source: PP-PK-001 · PP-002 · DIM-1 Pakistan</div>
+          <div style="font-size:9px;color:#64748b;line-height:1.6">Electricity 2× India &amp; Bangladesh — generator fuel adds 10–20% per run. SBP bank rates 15–22% p.a. + SBP FX controls limit USD availability for inputs. Structural double-squeeze on every order.</div>
+          <div style="font-size:8px;color:#334155;margin-top:3px;font-style:italic">PP-PK-001 · PP-002 · DIM-1 Pakistan</div>
         </div>
       </div>
     </div>
 
     <div class="bi-pp">
       <div style="display:flex">
-        <div style="width:40px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:13px">
+        <div style="width:38px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:12px">
           <span style="width:22px;height:22px;border-radius:50%;background:#ef444415;border:1px solid #ef444440;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#ef4444">2</span>
         </div>
-        <div style="flex:1;padding:11px 13px 11px 0">
+        <div style="flex:1;padding:10px 12px 10px 0">
           <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap">
-            <div style="font-size:11px;font-weight:800;color:#e2e8f0">≥95% Advance Expectation — Financing Restriction</div>
-            <span style="font-size:7px;font-weight:700;padding:1px 6px;border-radius:8px;background:#ef444415;color:#ef4444;border:1px solid #ef444430;white-space:nowrap">High</span>
+            <div style="font-size:11px;font-weight:800;color:#e2e8f0">≥95% Advance — Financing Restriction</div>
+            <span style="font-size:7px;font-weight:700;padding:1px 5px;border-radius:6px;background:#ef444415;color:#ef4444;border:1px solid #ef444430">High</span>
           </div>
-          <div style="font-size:9px;color:#64748b;line-height:1.65">Pakistan exporters require advance ratios ≥95% — most conventional financiers cap at 70–90%. At ≥95%, any buyer deductions (PP-007) or chargebacks leave near-zero buffer, creating a hard limit for most trade finance providers. Combined with OA 120-day terms and $3–5M+ cash locked at any time <em>(PP-001)</em>, this makes external financing structurally difficult.</div>
-          <div style="font-size:8px;color:#334155;margin-top:4px;font-style:italic">Source: PP-001 · PP-007 · ENTITY-Facility (advance_ratio)</div>
+          <div style="font-size:9px;color:#64748b;line-height:1.6">Pakistan exporters demand ≥95% advance; most financiers cap at 70–90%. At ≥95%, buyer deductions leave zero buffer — hard limit for trade finance. $3–5M+ cash locked at any point (OA 120d).</div>
+          <div style="font-size:8px;color:#334155;margin-top:3px;font-style:italic">PP-001 · PP-007 · ENTITY-Facility (advance_ratio)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bi-pp">
+      <div style="display:flex">
+        <div style="width:38px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:12px">
+          <span style="width:22px;height:22px;border-radius:50%;background:#ef444415;border:1px solid #ef444440;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#ef4444">3</span>
+        </div>
+        <div style="flex:1;padding:10px 12px 10px 0">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap">
+            <div style="font-size:11px;font-weight:800;color:#e2e8f0">Pre-Shipment Capital Gap</div>
+            <span style="font-size:7px;font-weight:700;padding:1px 5px;border-radius:6px;background:#ef444415;color:#ef4444;border:1px solid #ef444430">High</span>
+          </div>
+          <div style="font-size:9px;color:#64748b;line-height:1.6">Cotton, yarn &amp; dyes must be paid upfront before production starts — while previous shipment cash is still locked in 120-day receivables. Volatile Pakistan cotton prices amplify the timing mismatch.</div>
+          <div style="font-size:8px;color:#334155;margin-top:3px;font-style:italic">PP-005 · ENTITY-Commodity (cotton_price) · COMBO-009</div>
         </div>
       </div>
     </div>
 
     <div class="bi-pp" style="flex:1">
       <div style="display:flex;height:100%">
-        <div style="width:40px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:13px">
-          <span style="width:22px;height:22px;border-radius:50%;background:#eab30815;border:1px solid #eab30840;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#eab308">3</span>
+        <div style="width:38px;flex-shrink:0;display:flex;align-items:flex-start;justify-content:center;padding-top:12px">
+          <span style="width:22px;height:22px;border-radius:50%;background:#eab30815;border:1px solid #eab30840;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:#eab308">4</span>
         </div>
-        <div style="flex:1;padding:11px 13px 11px 0">
+        <div style="flex:1;padding:10px 12px 10px 0">
           <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap">
             <div style="font-size:11px;font-weight:800;color:#e2e8f0">UFLPA Cotton Risk + Buyer Concentration</div>
-            <span style="font-size:7px;font-weight:700;padding:1px 6px;border-radius:8px;background:#eab30815;color:#eab308;border:1px solid #eab30830;white-space:nowrap">Medium</span>
+            <span style="font-size:7px;font-weight:700;padding:1px 5px;border-radius:6px;background:#eab30815;color:#eab308;border:1px solid #eab30830">Medium</span>
           </div>
-          <div style="font-size:9px;color:#64748b;line-height:1.65">US CBP scrutinises Pakistani cotton under UFLPA — not Xinjiang-sourced, but traceability documentation required for US buyers. Top-3 buyers = 66% revenue; core buyer lost ratio 46%. One compliance flag on a US shipment can freeze multiple accounts simultaneously <em>(PP-003 · REG-UFLPA)</em>.</div>
-          <div style="font-size:8px;color:#334155;margin-top:4px;font-style:italic">Source: PP-003 · REG-UFLPA · DIM-1 Pakistan</div>
+          <div style="font-size:9px;color:#64748b;line-height:1.6">US CBP scrutinises Pakistani cotton under UFLPA — traceability docs required. Top-3 buyers = 66% revenue; core buyer lost ratio 46%. One compliance flag can freeze multiple US accounts simultaneously.</div>
+          <div style="font-size:8px;color:#334155;margin-top:3px;font-style:italic">PP-003 · REG-UFLPA · DIM-1 Pakistan</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- RIGHT: Actionable Insights -->
+  <!-- RIGHT: Actionable Insights (News / Why / What) with scrollbar -->
   <div class="bi-col">
-    <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b;margin-bottom:2px">Actionable Insights <span style="color:#334155;font-weight:400;text-transform:none;letter-spacing:0;font-style:italic">— market · buyer · compliance</span></div>
+    <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#64748b;margin-bottom:6px">Actionable Insights <span style="color:#334155;font-weight:400;font-style:italic;text-transform:none;letter-spacing:0">market · buyer · compliance</span></div>
+    <div class="bi-col-scroll" style="max-height:420px">
 
-    <div class="ins po">
-      <div class="is">Positive · US Tariff Shift — New Demand Window</div>
-      <div class="it">US tariffs on China home textiles now 145% — buyers actively rerouting sourcing to Pakistan. Bari's <b>existing US buyer base + Grade A rating</b> positions them as a direct beneficiary of this structural demand shift. Pakistan's home textile export share to the US is on track to reach a decade high.<br><br><b>→ Forward-book capacity with key US accounts now; negotiate longer-term supply agreements while China suppliers are frozen out</b></div>
-      <div class="ia">China tariff impact · Pakistan US towel import share rising · Window: 2025–2027</div>
+      <div class="ins po">
+        <div class="is">Positive · US Tariff Shift — New Demand Window</div>
+        <div class="ins-row"><span class="ins-lbl news">News</span><span class="ins-txt">US tariffs on China home textiles hit <b>145%</b> — US buyers actively rerouting sourcing to Pakistan. Pakistan's share of US towel imports is at a decade-high trajectory.</span></div>
+        <div class="ins-row"><span class="ins-lbl why">Why</span><span class="ins-txt">Bari's <b>existing US buyer base + Grade A rating</b> positions them as a direct beneficiary. Competitors scrambling to qualify; Bari is already approved.</span></div>
+        <div class="ins-row"><span class="ins-lbl what">What</span><span class="ins-what">Forward-book capacity with key US accounts now; negotiate multi-season supply agreements while China is frozen out.</span></div>
+        <div class="ins-ref">China tariff impact · Pakistan US import share rising · Window: 2025–2027</div>
+      </div>
+
+      <div class="ins hi">
+        <div class="is">High · EU CSDDD — Compliance Deadline Approaching</div>
+        <div class="ins-row"><span class="ins-lbl news">News</span><span class="ins-txt">EU Corporate Sustainability Due Diligence Directive (CSDDD) takes effect <b>2027</b> for large EU buyers — Germany, Norway &amp; Sweden accounts will mandate supplier ESG disclosure.</span></div>
+        <div class="ins-row"><span class="ins-lbl why">Why</span><span class="ins-txt">Bari holds SEDEX — a head start — but no <b>CSDDD-aligned supplier disclosure report</b> is in place. EU buyers will start requesting this 12–18 months before the deadline.</span></div>
+        <div class="ins-row"><span class="ins-lbl what">What</span><span class="ins-what">Build CSDDD-ready disclosure package on existing SEDEX foundation now — before EU buyers issue formal mandates.</span></div>
+        <div class="ins-ref">CSDDD effective 2027 · DE, NO, SE buyers · REG-CSDDD · SEDEX as base</div>
+      </div>
+
+      <div class="ins hi">
+        <div class="is">High · Waffle Weave &amp; Quick-Dry Terry — Premium Shift</div>
+        <div class="ins-row"><span class="ins-lbl news">News</span><span class="ins-txt">Waffle weave and quick-dry terry are the <b>fastest-growing bath segments 2025–26</b>, commanding 15–25% price premium over plain terry. Plain bath sheets are the fastest-declining SKU.</span></div>
+        <div class="ins-row"><span class="ins-lbl why">Why</span><span class="ins-txt">Bari's <b>Jacquard looms</b> can produce waffle weave today. Current mix skews toward plain bath sheets — missing the premium pricing wave that hospitality &amp; specialty buyers are driving.</span></div>
+        <div class="ins-row"><span class="ins-lbl what">What</span><span class="ins-what">Shift 20–30% of loom capacity to waffle/quick-dry SKUs; propose samples to hospitality and EU specialty buyers this season.</span></div>
+        <div class="ins-ref">Market trend · Jacquard capability in-house · Hospitality &amp; specialty channel priority</div>
+      </div>
+
     </div>
-
-    <div class="ins hi">
-      <div class="is">High · EU CSDDD — Compliance Action Required</div>
-      <div class="it">EU Corporate Sustainability Due Diligence Directive (CSDDD) takes effect 2027 for large EU buyers. Germany &amp; Norway accounts will demand <b>formal supply chain ESG documentation</b>. Bari holds SEDEX — a head start — but formal CSDDD-aligned supplier disclosure reports are not yet in place.<br><br><b>→ Build CSDDD-ready disclosure package on SEDEX foundation now, before EU buyers issue formal mandates and deadlines</b></div>
-      <div class="ia">CSDDD effective 2027 · Affects DE, NO, SE buyers · SEDEX as foundation · REG-CSDDD</div>
-    </div>
-
-    <div class="ins hi" style="flex:1">
-      <div class="is">High · Waffle Weave &amp; Quick-Dry Terry — Premium SKU Shift</div>
-      <div class="it">Waffle weave and quick-dry terry are the fastest-growing bath segments in 2025–26, commanding <b>15–25% price premium</b> over standard terry. Bari's Jacquard looms can produce these today — but current mix skews toward plain bath sheets, the fastest-declining segment. Hospitality and specialty buyers are actively requesting these SKUs.<br><br><b>→ Shift 20–30% of loom capacity to waffle/quick-dry; propose samples to hospitality and EU specialty buyers this season</b></div>
-      <div class="ia">Market trend · Jacquard capability already in-house · Hospitality &amp; specialty channel priority</div>
-    </div>
-
   </div>
 </div>
 </div></section><section><div class="text-[10px] uppercase tracking-widest mb-3 font-semibold text-[#8899b4]">Supply Chain Flow <span class="ds-val" title="✅ Validated — confirmed internal data">✅</span></div><div class="border rounded-lg p-4 bg-[#1a2332] border-[#2a3a50] "><div class="py-4"><div class="relative"><div class="absolute top-[24px] left-[10%] right-[10%] h-[3px] bg-gradient-to-r from-amber-500 via-green-500 via-60% via-blue-500 to-purple-500 rounded"></div><div class="relative flex justify-between px-[8%]"><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-amber-500 ring-2 ring-blue-400 ring-offset-2" style="--tw-ring-offset-color:#0f1117">📦</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PROCUREMENT</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#f59e0b20;color:#f59e0b">Partial Data</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#f59e0b20;color:#f59e0b">Medium Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-green-500">🏭</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PRODUCTION</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Score 10/10</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-blue-500">🚢</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">DELIVERY</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#3b82f620;color:#3b82f6">75K+ Shipments</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button><button class="flex flex-col items-center"><div class="w-12 h-12 rounded-full flex items-center justify-center text-xl relative z-10 bg-purple-500">💰</div><span class="text-xs font-bold mt-2 tracking-wider" style="color:#ffffff">PAYMENT</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#a855f720;color:#a855f7">40 Buyers</span><span class="text-[10px] px-2 py-0.5 rounded-full mt-1 font-medium" style="background-color:#22c55e20;color:#22c55e">Low Risk</span></button></div></div></div></div></section>
