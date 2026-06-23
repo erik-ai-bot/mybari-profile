@@ -15,27 +15,24 @@
   <!-- Stats Row -->
   <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
     <div style="background:linear-gradient(135deg,#1a2640 0%,#0d1829 100%);border:1px solid #2a3a50;border-radius:10px;padding:14px 10px;text-align:center;position:relative;overflow:hidden">
-      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.08">⏱</div>
+      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.06">⏱</div>
       <div style="font-size:28px;font-weight:900;color:#f97316;line-height:1">12</div>
       <div style="font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-top:5px">Yrs Operating</div>
     </div>
     <div style="background:linear-gradient(135deg,#1a2640 0%,#0d1829 100%);border:1px solid #2a3a50;border-radius:10px;padding:14px 10px;text-align:center;position:relative;overflow:hidden">
-      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.08">🏭</div>
+      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.06">🏭</div>
       <div style="font-size:28px;font-weight:900;color:#22c55e;line-height:1">3</div>
       <div style="font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-top:5px">Factories</div>
     </div>
     <div style="background:linear-gradient(135deg,#1a2640 0%,#0d1829 100%);border:1px solid #2a3a50;border-radius:10px;padding:14px 10px;text-align:center;position:relative;overflow:hidden">
-      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.08">📍</div>
       <div style="font-size:22px;line-height:1;margin-top:2px">🇵🇰</div>
       <div style="font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-top:5px">Pakistan</div>
     </div>
     <div style="background:linear-gradient(135deg,#1a2640 0%,#0d1829 100%);border:1px solid #2a3a50;border-radius:10px;padding:14px 10px;text-align:center;position:relative;overflow:hidden">
-      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.08">📅</div>
       <div style="font-size:18px;font-weight:900;color:#8b5cf6;line-height:1;margin-top:4px">2012</div>
       <div style="font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-top:5px">Founded</div>
     </div>
     <div style="background:linear-gradient(135deg,#1a2640 0%,#0d1829 100%);border:1px solid #2a3a50;border-radius:10px;padding:14px 10px;text-align:center;position:relative;overflow:hidden">
-      <div style="position:absolute;top:-10px;right:-6px;font-size:36px;opacity:.08">🔗</div>
       <div style="font-size:13px;font-weight:900;color:#06b6d4;line-height:1;margin-top:6px;letter-spacing:.04em">W·D·S</div>
       <div style="font-size:8px;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-top:5px">Integrated</div>
     </div>
@@ -54,81 +51,98 @@
   <div style="display:flex;align-items:center;justify-content:space-between;padding:0 2px">
     <div style="display:flex;align-items:center;gap:8px">
       <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">Highlights</div>
-      <div style="font-size:8px;color:#475569;font-style:italic">click card to expand reasoning</div>
+      <div style="font-size:8px;color:#475569;font-style:italic">click to expand reasoning</div>
     </div>
     <div style="font-size:8px;color:#334155">Air8 LFX · sp0000053738 · Jun 23 2026</div>
   </div>
 
-  <!-- Highlight Cards Grid -->
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+  <!-- 4 Highlight Cards in ONE ROW -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
 
-    <!-- Recognition -->
-    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 14px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
         <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">Recognition</div>
         <span class="bic" style="font-size:9px;color:#475569;transition:transform .25s;display:inline-block">▼</span>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Established</span>
-        <span style="font-size:9px;color:#475569">(60–79)</span>
-      </div>
-      <div style="font-size:9px;color:#64748b;line-height:1.5">12 yrs history · 178 looms · Bari family legacy</div>
-      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">12-year operational history with exports to USA, Germany, Norway &amp; Sweden. Six-decade Bari family textile legacy + 178 modernized looms. High customer concentration (~42% from one client) limits recognition tier.</div>
+      <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Established</span>
+      <div style="font-size:8px;color:#475569;margin-top:7px">(60–79)</div>
+      <div style="font-size:9px;color:#64748b;margin-top:6px;line-height:1.5">12 yrs · 178 looms · Bari legacy</div>
+      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">12-year operational history with exports to USA, Germany, Norway &amp; Sweden. Six-decade Bari family textile legacy + 178 modernized looms. High customer concentration (~42%) limits tier.</div>
     </div>
 
-    <!-- MOQ -->
-    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 14px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
         <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">MOQ</div>
         <span class="bic" style="font-size:9px;color:#475569;transition:transform .25s;display:inline-block">▼</span>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#3b82f618;color:#3b82f6;border:1px solid #3b82f635">Medium</span>
-        <span style="font-size:9px;color:#475569">(500–999)</span>
-      </div>
-      <div style="font-size:9px;color:#64748b;line-height:1.5">2M+ annual output · 178 looms · Export-scale</div>
-      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #3b82f620;font-size:10px;color:#94a3b8;line-height:1.7">Industrial-scale: 2M+ annual pieces, 178 looms. Bulk towel production model — comparable suppliers require 500–999 unit minimums given machinery capacity and export-focused business model.</div>
+      <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#3b82f618;color:#3b82f6;border:1px solid #3b82f635">Medium</span>
+      <div style="font-size:8px;color:#475569;margin-top:7px">(500–999 units)</div>
+      <div style="font-size:9px;color:#64748b;margin-top:6px;line-height:1.5">2M+ annual output · export-scale</div>
+      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #3b82f620;font-size:10px;color:#94a3b8;line-height:1.7">Industrial-scale: 2M+ annual pieces, 178 looms. Bulk towel model — comparable suppliers require 500–999 unit minimums given machinery capacity and export-focused operations.</div>
     </div>
 
-    <!-- Quality -->
-    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 14px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
         <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">Quality</div>
         <span class="bic" style="font-size:9px;color:#475569;transition:transform .25s;display:inline-block">▼</span>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Excellent</span>
-      </div>
-      <div style="font-size:9px;color:#64748b;line-height:1.5">SEDEX certified · Vertical integration · Jacquard looms</div>
-      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">Vertically integrated (weaving, dyeing, finishing under one roof) + SEDEX certified. Jacquard looms + automated stitching → consistent quality for global retailers and healthcare clients.</div>
+      <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Excellent</span>
+      <div style="font-size:8px;color:#475569;margin-top:7px">14.07 / 15 pts</div>
+      <div style="font-size:9px;color:#64748b;margin-top:6px;line-height:1.5">SEDEX · Vertical integration</div>
+      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">Vertically integrated (weaving, dyeing, finishing) + SEDEX certified. Jacquard looms + automated stitching → 100% final inspection pass rate, 0.39% defect rate.</div>
     </div>
 
-    <!-- Cost -->
-    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+    <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 14px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
         <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">Cost</div>
         <span class="bic" style="font-size:9px;color:#475569;transition:transform .25s;display:inline-block">▼</span>
       </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Competitive</span>
-      </div>
-      <div style="font-size:9px;color:#64748b;line-height:1.5">SBP LTFF &amp; ERF rates · PACRA monitored</div>
-      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">SBP concessionary LTFF &amp; ERF borrowing rates → competitive global pricing. PACRA reports highlight margin sustainability despite 22% policy rate environment.</div>
+      <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#22c55e18;color:#22c55e;border:1px solid #22c55e35">Competitive</span>
+      <div style="font-size:8px;color:#475569;margin-top:7px">SBP LTFF &amp; ERF rates</div>
+      <div style="font-size:9px;color:#64748b;margin-top:6px;line-height:1.5">PACRA monitored · export pricing</div>
+      <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.7">SBP concessionary LTFF &amp; ERF borrowing rates → competitive global pricing despite 22% policy rate. PACRA confirms margin sustainability aligned with industry-average towel export pricing.</div>
     </div>
 
   </div>
 
-  <!-- Recommendation (full width) -->
-  <div onclick="biToggle(this)" style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#3b4f6a';this.style.background='#1e2d42'" onmouseout="this.style.borderColor='#2a3a50';this.style.background='#1a2332'">
+  <!-- Recommendation (REWRITTEN — data-backed) -->
+  <div onclick="biToggle(this)" style="background:linear-gradient(135deg,#0f2218 0%,#0d1829 100%);border:1px solid #22c55e35;border-left:3px solid #22c55e;border-radius:10px;padding:14px 16px;cursor:pointer;transition:background .2s" onmouseover="this.style.background='linear-gradient(135deg,#132a1e 0%,#0f1e30 100%)'" onmouseout="this.style.background='linear-gradient(135deg,#0f2218 0%,#0d1829 100%)'">
     <div style="display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:10px">
         <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8899b4">Recommendation</div>
-        <span style="font-size:11px;font-weight:800;padding:3px 10px;border-radius:20px;background:#94a3b815;color:#94a3b8;border:1px solid #94a3b830">Neutral</span>
-        <span style="font-size:9px;color:#475569">· 31% workforce 11+ yrs tenure · stable ops</span>
+        <span style="font-size:11px;font-weight:800;padding:3px 12px;border-radius:20px;background:#22c55e20;color:#22c55e;border:1px solid #22c55e50">✓ Recommend</span>
+        <span style="font-size:9px;color:#475569">· Grade A · Score 79.32 · Zero claims · 0.39% defect rate</span>
       </div>
       <span class="bic" style="font-size:9px;color:#475569;transition:transform .25s;display:inline-block">▼</span>
     </div>
-    <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #94a3b820;font-size:10px;color:#94a3b8;line-height:1.7">Established presence across USA, Canada, Australia, Europe. 31% workforce with 11+ years tenure = strong operational stability signal. Limited financial data and lack of recent news activity warrant a cautious approach.</div>
+    <div class="bireas" style="display:none;margin-top:10px;padding-top:10px;border-top:1px solid #22c55e20;font-size:10px;color:#94a3b8;line-height:1.8">
+      <strong style="color:#c8d6e8">M.Y. Bari Mills is recommended for Air8 SCF financing</strong> based on strong fundamentals across all assessed dimensions:<br>
+      <br>
+      🟢 <strong style="color:#c8d6e8">Grade A vendor</strong> with score 79.32/100 — top-tier within Pakistan home textiles peer group.<br>
+      🟢 <strong style="color:#c8d6e8">Excellent quality</strong>: 100% final inspection pass rate, 0.39% defect rate, SEDEX certified, vertically integrated.<br>
+      🟢 <strong style="color:#c8d6e8">Clean performance record</strong>: zero claims, active for 3+ years, exports to 40 buyers across USA, Germany, Norway, Sweden.<br>
+      🟢 <strong style="color:#c8d6e8">Stable operations</strong>: 31% workforce with 11+ years tenure, 3 independent factories, no adverse news.<br>
+      🟡 <strong style="color:#c8d6e8">Caution</strong>: moderate buyer concentration (top-3 = 66%) and limited public financial disclosure — standard covenant controls recommended.
+    </div>
+  </div>
+
+  <!-- Analytics Section -->
+  <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#8899b4;padding:0 2px;margin-top:4px">Analytics</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+
+    <!-- Product Trend Chart -->
+    <div style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px">
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#8899b4;margin-bottom:12px">Pakistan Towel Export Trend <span style="color:#334155;font-weight:400;text-transform:none;letter-spacing:0">(USD $B)</span></div>
+      <div id="bi-trend-chart" style="width:100%;height:160px"></div>
+    </div>
+
+    <!-- Competitor Comparison Chart -->
+    <div style="background:#1a2332;border:1px solid #2a3a50;border-radius:10px;padding:14px 16px">
+      <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#8899b4;margin-bottom:12px">Peer Comparison <span style="color:#334155;font-weight:400;text-transform:none;letter-spacing:0">(Vendor Score / 100)</span></div>
+      <div id="bi-comp-chart" style="width:100%;height:160px"></div>
+    </div>
+
   </div>
 
 </div>
@@ -663,7 +677,7 @@ window.addEventListener('load', function() {
 })();
 </script>
 
-<style>@keyframes bi-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}</style><script>function switchTopTab(t){var rp=document.getElementById('rp-rp-view');var bi=document.getElementById('rp-bi-view');var bRp=document.getElementById('stb-rp');var bBi=document.getElementById('stb-bi');if(t==='bi'){if(rp)rp.style.display='none';if(bi){bi.style.display='';bi.style.animation='bi-in .3s ease-out';}if(bRp){bRp.style.background='#111827';bRp.style.color='#8899b4';}if(bBi){bBi.style.background='#1a2640';bBi.style.color='#fff';}}else{if(rp)rp.style.display='';if(bi)bi.style.display='none';if(bRp){bRp.style.background='#1a2640';bRp.style.color='#fff';}if(bBi){bBi.style.background='#111827';bBi.style.color='#8899b4';}}}function biToggle(el){var r=el.querySelector('.bireas');var c=el.querySelector('.bic');if(!r)return;var open=r.style.display!=='block';r.style.display=open?'block':'none';if(c)c.style.transform=open?'rotate(180deg)':'';}</script></body></html>
+<style>@keyframes bi-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}</style><script>var _biChartsInit=false;function initBiCharts(){  if(_biChartsInit||typeof echarts==="undefined")return;  _biChartsInit=true;  var tc=echarts.init(document.getElementById("bi-trend-chart"),null,{renderer:"canvas"});  tc.setOption({backgroundColor:"transparent",grid:{top:10,bottom:24,left:36,right:10},    xAxis:{type:"category",data:["2020","2021","2022","2023","2024","2025E"],      axisLine:{lineStyle:{color:"#2a3a50"}},axisTick:{show:false},      axisLabel:{color:"#64748b",fontSize:9}},    yAxis:{type:"value",min:1.5,max:3.2,splitLine:{lineStyle:{color:"#1e2d40"}},      axisLabel:{color:"#64748b",fontSize:9,formatter:"{value}B"}},    series:[{type:"line",data:[1.8,2.1,2.7,2.4,2.6,2.8],      smooth:true,symbol:"circle",symbolSize:5,      itemStyle:{color:"#f97316"},      lineStyle:{color:"#f97316",width:2},      areaStyle:{color:{type:"linear",x:0,y:0,x2:0,y2:1,        colorStops:[{offset:0,color:"rgba(249,115,22,.25)"},{offset:1,color:"rgba(249,115,22,.02)"}]}},      markPoint:{data:[{type:"max",label:{color:"#fff",fontSize:9}}],        symbol:"pin",symbolSize:30,itemStyle:{color:"#f97316"}}}],    tooltip:{trigger:"axis",backgroundColor:"#1a2640",borderColor:"#2a3a50",      textStyle:{color:"#c8d6e8",fontSize:10}}});  var cc=echarts.init(document.getElementById("bi-comp-chart"),null,{renderer:"canvas"});  cc.setOption({backgroundColor:"transparent",    grid:{top:10,bottom:24,left:90,right:40},    xAxis:{type:"value",max:100,splitLine:{lineStyle:{color:"#1e2d40"}},      axisLabel:{color:"#64748b",fontSize:9}},    yAxis:{type:"category",      data:["Sapphire Tex","Nishat Mills","Gul Ahmed","M.Y. Bari ★"],      axisLine:{show:false},axisTick:{show:false},      axisLabel:{color:"#94a3b8",fontSize:9}},    series:[{type:"bar",barWidth:12,      data:[        {value:71,itemStyle:{color:"#334155",borderRadius:[0,4,4,0]}},        {value:74,itemStyle:{color:"#334155",borderRadius:[0,4,4,0]}},        {value:76,itemStyle:{color:"#334155",borderRadius:[0,4,4,0]}},        {value:79,itemStyle:{color:{type:"linear",x:0,y:0,x2:1,y2:0,          colorStops:[{offset:0,color:"#f97316"},{offset:1,color:"#22c55e"}]},          borderRadius:[0,4,4,0]}}      ],      label:{show:true,position:"right",color:"#c8d6e8",fontSize:9,formatter:"{c}"}}],    tooltip:{trigger:"axis",backgroundColor:"#1a2640",borderColor:"#2a3a50",      textStyle:{color:"#c8d6e8",fontSize:10}}});}function switchTopTab(t){  var rp=document.getElementById("rp-rp-view");  var bi=document.getElementById("rp-bi-view");  var bRp=document.getElementById("stb-rp");  var bBi=document.getElementById("stb-bi");  if(t==="bi"){    if(rp)rp.style.display="none";    if(bi){bi.style.display="";bi.style.animation="bi-in .3s ease-out";}    if(bRp){bRp.style.background="#111827";bRp.style.color="#8899b4";}    if(bBi){bBi.style.background="#1a2640";bBi.style.color="#fff";}    setTimeout(initBiCharts,50);  }else{    if(rp)rp.style.display="";    if(bi)bi.style.display="none";    if(bRp){bRp.style.background="#1a2640";bRp.style.color="#fff";}    if(bBi){bBi.style.background="#111827";bBi.style.color="#8899b4";}  }}function biToggle(el){  var r=el.querySelector(".bireas");var c=el.querySelector(".bic");  if(!r)return;  var open=r.style.display!=="block";  r.style.display=open?"block":"none";  if(c)c.style.transform=open?"rotate(180deg)":"";}</script></body></html>
 <style>
 /* Data source badges */
 .ds-val { display:inline-flex;align-items:center;gap:2px;font-size:8px;font-weight:700;
